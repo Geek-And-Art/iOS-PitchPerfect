@@ -26,8 +26,13 @@ class ViewController: UIViewController {
         print("record button pressed!")
         recordingLabel.text = "Recording in progress"
     }
+    
     @IBAction func stopRecording(_ sender: Any) {
         print("stop recording button pressed!")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("viewWillAppear called")
     }
 
 }
