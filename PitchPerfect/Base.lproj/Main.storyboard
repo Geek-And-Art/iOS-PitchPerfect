@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bp7-bX-5GZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -39,6 +39,7 @@
                                 <state key="normal" image="stopButton"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kjY-Hl-qbc"/>
+                                    <segue destination="4if-aq-RdR" kind="show" id="8nU-A5-iKE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,6 +53,7 @@
                             <constraint firstItem="Xyo-HV-rqA" firstAttribute="top" secondItem="ssL-OW-LJz" secondAttribute="bottom" constant="22" id="zvF-v3-FzK"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="OAA-wJ-rXO"/>
                     <connections>
                         <outlet property="recordingButton" destination="zjD-IG-N7h" id="0tH-IE-8BZ"/>
                         <outlet property="recordingLabel" destination="ssL-OW-LJz" id="s4y-lR-9HH"/>
@@ -59,6 +61,42 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="96.7016491754123"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ohb-Jr-MIS">
+            <objects>
+                <viewController id="4if-aq-RdR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="15L-jp-OLL"/>
+                        <viewControllerLayoutGuide type="bottom" id="0h8-MV-rXe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M9B-Yb-mCB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gaO-oc-d6B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1882" y="90"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EQ1-8f-zPg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bp7-bX-5GZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U68-Vh-oCS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ujZ-iV-kah"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gtq-Wd-oQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="96.7016491754123"/>
         </scene>
